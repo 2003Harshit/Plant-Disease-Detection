@@ -1,0 +1,270 @@
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1em;
+}
+
+/* Base button styles */
+button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 24px; /* Increased padding for better usability */
+    font-size: 16px;
+    font-weight: 600; /* Bolder text for emphasis */
+    margin: 5px;
+    border-radius: 8px; /* Slightly more rounded corners */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Button Colors */
+.geoBtn {
+    background-color: #28a745; /* Green for geographic button */
+    color: white;
+}
+
+.toggleBtn {
+    background-color: #17a2b8; /* Teal for toggle button */
+    color: white;
+}
+
+.actionBtn {
+    background-color: #ffc107; /* Yellow for action button */
+    color: white;
+}
+
+/* Hover Effects */
+button:hover {
+    opacity: 0.9; /* Slightly decrease opacity on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Active State */
+button:active {
+    transform: translateY(0); /* Reset lift effect on active */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly flatter shadow on active */
+}
+
+/* Focus State */
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Add custom focus ring */
+}
+
+/* Style for crop recommendation list */
+#cropLists {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#cropLists ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Crop container for aligning recommended and not recommended crops */
+/* Crop container for aligning recommended and not recommended crops */
+/* Crop container for aligning recommended and not recommended crops */
+.crop-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the entire container */
+    margin-top: 20px; /* Add some margin above the container */
+}
+
+/* Recommended and Not Recommended Crops */
+.recommended-crops, .not-recommended-crops {
+    flex: 1; /* Each takes up equal space */
+    margin: 0 10px; /* Margin between the two columns */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text inside each column */
+}
+
+/* Align images and text in the list */
+#cropLists img {
+    vertical-align: middle; /* Ensure images are vertically aligned */
+    width: 50px; /* Set a width for the images */
+    height: 50px; /* Set a fixed height to maintain consistency */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+#cropLists li {
+    display: flex; /* Use flex to align image and text */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Style for advice message */
+#cropLists p {
+    font-style: italic;
+    color: #d9534f; /* You can choose a color that fits your design */
+    margin-top: 20px;
+    text-align: center; /* Center align the advice text */
+}
+
+
+
+/* Styles for forms and results */
+.form-container {
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+input[type="text"], input[type="number"], select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#yieldResult, #soilMoistureResult, #diseaseDetectionResult {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Additional styles */
+.buttons-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actionBtn {
+    background-color: #ffc107; /* Yellow */
+    color: white;
+}
+
+.ez-agriculture-heading {
+    font-family: 'Arial', sans-serif; /* Choose a font family */
+    font-size: 36px; /* Set the font size */
+    font-weight: bold; /* Make the font bold */
+    color:silver; /* Set the text color */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for effects */
+    margin: 20px 0; /* Add some margin */
+}
+
+.ez-agriculture-heading:hover {
+    color: #388E3C; /* Change color on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+/* Reset some default styles */
+html, body {
+    height: 100%; /* Full height for the body */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a default font */
+    display: flex; /* Use flexbox for the body */
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Header styling */
+header {
+    flex: 0 0 auto; /* Don't let header grow */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding for spacing */
+    background-color: blue; /* Header background color */
+    color: white; /* Header text color */
+}
+
+/* Heading styles */
+.ez-agriculture-heading {
+    font-size: 48px; /* Increase heading size */
+    font-weight: bold; /* Bold heading */
+    transition: transform 0.3s, color 0.3s; /* Add transitions */
+    margin: 0; /* Remove margin */
+}
+
+.ez-agriculture-heading:hover {
+    color: #388E3C; /* Darker color on hover */
+    transform: scale(1.1); /* Scale on hover */
+}
+
+/* Main content styling */
+#details {
+    flex: 1; /* Allow to fill available space */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding */
+    background-color: #f9f9f9; /* Light background */
+}
+
+/* Button styles */
+.geoBtn, .toggleBtn, .actionBtn {
+    margin: 10px; /* Add margin to buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    font-size: 16px; /* Button text size */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Button text color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Add transition */
+}
+
+.geoBtn:hover, .toggleBtn:hover, .actionBtn:hover {
+    background-color: #388E3C; /* Darker background on hover */
+}
+
+/* Form container styles */
+.form-container {
+    margin-top: 20px; /* Space above form */
+    padding: 20px; /* Padding for form */
+    border: 1px solid #ccc; /* Border around form */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background for form */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Limit maximum width */
+}
+
+/* Advice text styling */
+#advice {
+    margin-top: 20px; /* Space above advice text */
+    font-size: 18px; /* Text size */
+    color: #333; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/public/images/image1.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    text-align: center;
+    height: 100vh; /* Full height */
+    border-radius: 8px;
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.8); /* Add some transparency to the header */
+    color: white;
+    padding: 1em;
+}
+
+.toggleBtn:hover {
+    background-color: #28a745; /* Change background on hover */
+}
+
+#details {
+    background-image: url('/public/images/'); /* Set your background image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding: 20px; /* Optional: Add padding for space */
+    border-radius: 8px; /* Optional: rounded corners */
+    background-color: white; /* Change text color for better visibility */
+}
